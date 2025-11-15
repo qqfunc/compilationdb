@@ -1,0 +1,15 @@
+# Python
+__pycache__/
+*.egg-info/
+.venv/
+
+# Lefthook
+.lefthook-local.yml
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
