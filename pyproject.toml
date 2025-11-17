@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools==80.9.0", "setuptools-scm==9.2.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "compilationdb"
+requires-python = ">= 3.11"
+maintainers = [{ name = "PythonLot", email = "pythonlot@googlegroups.com" }]
+description = """\
+  JSON Compilation Database (compile_commands.json) generator for Python C\
+  extension modules.\
+  """
+readme = "README.md"
+license = "Unlicense"
+license-files = ["LICENSE.md"]
+keywords = [
+  "compilation database",
+  "compile_commands.json",
+  "llvm",
+  "clang",
+  "clangd",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: C",
+  "Programming Language :: C++",
+  "Programming Language :: Objective C",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+dynamic = ["version"]
+dependencies = []
+
+[project.scripts]
+gitrole = "compilationdb.__main__:main"
+
+[project.urls]
+Source = "https://www.github.com/pythonlot/compilationdb"
+Issues = "https://www.github.com/pythonlot/compilationdb/issues"
+
+[dependency-groups]
+dev = [
+  "commitlint==1.3.1",
+  "editorconfig-checker==3.4.1",
+  "lefthook==2.0.4",
+  "ruff==0.14.5",
+  "ty==0.0.1a25",
+  "typos==1.39.2",
+]
+
+[tool.pytest]
+addopts = ["-n", "auto"]
+
+[tool.ruff]
+line-length = 79
+format.docstring-code-line-length = 72
+lint.select = ["ALL"]
+lint.ignore = [
+  "PYI021", # docstring-in-stub
+  "D203",   # one-blank-line-before-class
+  "D213",   # multi-line-summary-second-line
+  "D418",   # overload-with-docstring
+]
+lint.per-file-ignores."tests/**.py" = [
+  "S101",    # assert
+  "INP001",  # implicit-namespace-package
+  "PLR2004", # magic-value-comparison
+]
+lint.pycodestyle.max-doc-length = 72
+
+[tool.setuptools_scm]
+
+[tool.ty]
+terminal.error-on-warning = true
+
+[tool.typos]
+files.extend-exclude = ["uv.lock"]
+default.unicode = false
