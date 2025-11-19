@@ -53,6 +53,7 @@ dev = [
   "editorconfig-checker==3.4.1",
   "lefthook==2.0.4",
   "ruff==0.14.5",
+  "taskipy==1.14.1",
   "ty==0.0.1a27",
   "typos==1.39.2",
 ]
@@ -78,6 +79,14 @@ lint.per-file-ignores."tests/**.py" = [
 lint.pycodestyle.max-doc-length = 72
 
 [tool.setuptools_scm]
+
+[tool.taskipy.settings]
+cwd = "."
+
+[tool.taskipy.tasks]
+setup = { cmd = "lefthook install", help = "set up the project" }
+check = { cmd = "lefthook run check", help = "check the code" }
+fix = { cmd = "lefthook run fix", help = "check and fix the code" }
 
 [tool.ty]
 terminal.error-on-warning = true
