@@ -1,19 +1,26 @@
 pre-commit:
   parallel: true
   jobs:
-    - name: editorconfig-checker
-      run: ec
-    - name: Typos
-      run: typos
-    - group:
+    - name: Check
+      group:
         parallel: true
         jobs:
-          - name: Ruff Check
-            run: ruff check
-          - name: Ruff Format
-            run: ruff format --check
-    - name: ty
-      run: ty check
+          - name: editorconfig-checker
+            run: ec
+          - name: Typos
+            run: typos
+          - name: Ruff
+            group:
+              parallel: true
+              jobs:
+                - name: Check
+                  run: ruff check
+                - name: Format
+                  run: ruff format --check
+          - name: ty
+            run: ty check
+          - name: uv lock
+            run: uv lock --check
 
 commit-msg:
   jobs:
@@ -27,27 +34,40 @@ check:
       run: ec
     - name: Typos
       run: typos
-    - group:
+    - name: Ruff
+      group:
         parallel: true
         jobs:
-          - name: Ruff Check
+          - name: Check
             run: ruff check
-          - name: Ruff Format
+          - name: Format
             run: ruff format --check
     - name: ty
       run: ty check
+    - name: uv lock
+      run: uv lock --check
 
 fix:
   jobs:
-    - name: editorconfig-checker
-      run: ec
-    - name: Typos
-      run: typos -w
-    - group:
+    - name: Check
+      group:
+        parallel: true
         jobs:
-          - name: Ruff Check
-            run: ruff check --fix
-          - name: Ruff Format
-            run: ruff format
-    - name: ty
-      run: ty check
+          - name: editorconfig-checker
+            run: ec
+          - name: ty
+            run: ty check
+          - name: uv lock
+            run: uv lock --check
+    - name: Fix
+      group:
+        jobs:
+          - name: Typos
+            run: typos -w
+          - name: Ruff
+            group:
+              jobs:
+                - name: Ruff Check
+                  run: ruff check --fix
+                - name: Ruff Format
+                  run: ruff format
