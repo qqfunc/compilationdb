@@ -1,5 +1,10 @@
 # Development Guide for AI Agents
 
+## Project Structure
+
+* `src/`: The source code for this project.
+* `tests/`: The test scripts for unit testing.
+
 ## Setup
 
 First, run the following commands to set up the development environment:
@@ -32,7 +37,9 @@ To run individually:
 ### Commit Messages
 
 * Follow Conventional Commits.
+* Use the imperative mood in the *description* part.
+* Lowercase the first letter of the *type*, *scope*, and *description* parts.
 
 ### Pull Requests
 
-* Pull request titles should also follow Conventional Commits.
+* Pull request titles should also follow the above commit message conventions.
