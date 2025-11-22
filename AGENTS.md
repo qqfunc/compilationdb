@@ -19,7 +19,7 @@ First, run the following commands to set up the development environment:
 
 ## Check and Fix Code
 
-Run the following command to perform various checks and fixes in one go.
+Run the following commands to perform various checks and fixes in one go.
 
 * `uv run task check`: Check the whole code.
 * `uv run task fix`: Check and fix the whole code.
