@@ -12,12 +12,20 @@ wheels = [
 ]
 
 [[package]]
-name = "commitlint"
-version = "1.3.1"
+name = "committed"
+version = "1.1.8"
 source = { registry = "https://pypi.org/simple" }
-sdist = { url = "https://files.pythonhosted.org/packages/99/c1/42ee438955d0df9bf311dc4c573a49fb7215d915b224ee49566c6d11a318/commitlint-1.3.1.tar.gz", hash = "sha256:2a0123636bd12cb47f96034af0711d302403e80e47bac815f26c495420929d53", size = 23896, upload-time = "2025-08-25T13:19:35.965Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d6/09/390cd691f3210ee68b524b65997edb5c6a62cba7c97d4600fd95fd47b505/committed-1.1.8.tar.gz", hash = "sha256:15e7b57d33dade4357668eeb738e7e4d533f0e2274eec5eeb685a1eeed13d9da", size = 24450, upload-time = "2025-11-19T15:45:03.304Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/78/bb/7413a18bff34f38a0b3283558dc25119c21426964619080e0061aadd3bb0/commitlint-1.3.1-py3-none-any.whl", hash = "sha256:02024a64a785c7b5f2c6accb33415efb61d428b90e0231480ac49b8b07624520", size = 26643, upload-time = "2025-08-25T13:19:35.173Z" },
+    { url = "https://files.pythonhosted.org/packages/99/1e/af15d0055ce83f45e69830e57742eedb660fc44e35bab3b6050bf7d8bed9/committed-1.1.8-py3-none-macosx_10_12_x86_64.whl", hash = "sha256:d262a50dcab27e5f3c722a1b3c8c4247f3986f49dc0dcd86c04bf13c8f913e56", size = 1470132, upload-time = "2025-11-19T15:44:48.268Z" },
+    { url = "https://files.pythonhosted.org/packages/56/c3/bc85dea8fc4e4454ce15dbec04f2cbf2c51e3f6ef25438cfaa3e9844ccbf/committed-1.1.8-py3-none-macosx_11_0_arm64.whl", hash = "sha256:fd000e0f2466208582ee32ac45e41f46361e7f919572d66fa24268de1bf049f2", size = 1335511, upload-time = "2025-11-19T15:44:49.656Z" },
+    { url = "https://files.pythonhosted.org/packages/da/eb/3430b1461ebb71e0acdfbf84969d49ed4a88a3736dc714ff73643f35cc47/committed-1.1.8-py3-none-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:9b1c892d95f74fc8aab08d9f235f198f6547addaed50e3b401ca6431272c418f", size = 1529584, upload-time = "2025-11-19T15:44:50.865Z" },
+    { url = "https://files.pythonhosted.org/packages/32/e3/ead63d7aa2fd089af20b785155a866645facfc808503626e162adc2bb8c1/committed-1.1.8-py3-none-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b9e8d5b60abc12705dfb0c819864ed16835d2dbb7c94b0ea6307474c2e8daa81", size = 1619690, upload-time = "2025-11-19T15:44:52.58Z" },
+    { url = "https://files.pythonhosted.org/packages/7d/87/e1c8743c08e3ecd703f239fc02820fb2b108c902b5140b1654533b81461e/committed-1.1.8-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ed001c29086d101bfe27f3a0039814d44b4e46b08e9f7668ae837d07b94da03a", size = 1587266, upload-time = "2025-11-19T15:44:54.005Z" },
+    { url = "https://files.pythonhosted.org/packages/46/51/69e7df71fdb83bbbdc99410fe4c26ecd02ade5adf369115e8a6a9ad5f931/committed-1.1.8-py3-none-musllinux_1_2_aarch64.whl", hash = "sha256:b29687af7d2c8009771311ac0e53c8a8b4a81365b7bdc7c30821a9152c0cb134", size = 1576049, upload-time = "2025-11-19T15:44:56.172Z" },
+    { url = "https://files.pythonhosted.org/packages/dd/16/7828b1cef8fc4f49fc71f773e2347d7411196f80c6f66642ebbbc85e70ba/committed-1.1.8-py3-none-musllinux_1_2_x86_64.whl", hash = "sha256:b23b8aa84272e3ac5b584043325c549ab20e64f1dc278023132795fb5d84b75a", size = 1697666, upload-time = "2025-11-19T15:44:57.729Z" },
+    { url = "https://files.pythonhosted.org/packages/75/2a/8857995e5552ef50353472781a0606c0d8899abe9634ce21f81aec388af5/committed-1.1.8-py3-none-win32.whl", hash = "sha256:3beb1dc917a268f8cd1c4e187b83f0303f0bf7303268713e3bb5f3b2d049c59f", size = 1448030, upload-time = "2025-11-19T15:45:00.347Z" },
+    { url = "https://files.pythonhosted.org/packages/74/15/fa72d1355407ebd56a837071a5b27ed2b999d197420625ec1be59f91c6b0/committed-1.1.8-py3-none-win_amd64.whl", hash = "sha256:1b75966714c4e8d630e9ea0fe71f237abd65904620d27e08aa12a2ac46f695f2", size = 1614491, upload-time = "2025-11-19T15:45:01.936Z" },
 ]
 
 [[package]]
@@ -26,7 +34,7 @@ source = { editable = "." }
 
 [package.dev-dependencies]
 dev = [
-    { name = "commitlint" },
+    { name = "committed" },
     { name = "editorconfig-checker" },
     { name = "lefthook" },
     { name = "ruff" },
@@ -39,7 +47,7 @@ dev = [
 
 [package.metadata.requires-dev]
 dev = [
-    { name = "commitlint", specifier = "==1.3.1" },
+    { name = "committed", specifier = "==1.1.8" },
     { name = "editorconfig-checker", specifier = "==3.4.1" },
     { name = "lefthook", specifier = "==2.0.4" },
     { name = "ruff", specifier = "==0.14.6" },
