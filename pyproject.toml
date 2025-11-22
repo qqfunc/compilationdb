@@ -38,7 +38,6 @@ classifiers = [
   "Typing :: Typed",
 ]
 dynamic = ["version"]
-dependencies = []
 
 [project.scripts]
 gitrole = "compilationdb.__main__:main"
