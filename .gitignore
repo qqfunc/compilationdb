@@ -14,3 +14,10 @@ __pycache__/
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+
+# Windows
+desktop.ini
+Thumbs.db
+
+# macOS
+.DS_Store
