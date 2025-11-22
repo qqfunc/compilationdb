@@ -4,7 +4,8 @@ __pycache__/
 .venv/
 
 # Lefthook
-.lefthook-local.yml
+/.lefthook-local/
+/.lefthook-local.yml
 
 # Visual Studio Code
 .vscode/*
