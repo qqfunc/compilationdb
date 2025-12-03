@@ -50,7 +50,7 @@ Issues = "https://www.github.com/pythonlot/compilationdb/issues"
 dev = [
   "committed==1.1.8",
   "editorconfig-checker==3.6.0",
-  "lefthook==2.0.5",
+  "lefthook==2.0.6",
   "ruff==0.14.7",
   "taskipy==1.14.1",
   "ty==0.0.1a29",
