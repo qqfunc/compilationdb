@@ -51,7 +51,7 @@ dev = [
   "committed==1.1.9",
   "editorconfig-checker==3.6.0",
   "lefthook==2.0.13",
-  "ruff==0.14.10",
+  "ruff==0.14.11",
   "taskipy==1.14.1",
   "ty==0.0.10",
   "typos==1.42.0",
