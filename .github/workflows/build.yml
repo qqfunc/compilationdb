@@ -54,7 +54,7 @@ jobs:
       - name: Check with editorconfig-checker
         uses: editorconfig-checker/action-editorconfig-checker@v2.1.0
       - name: Spell Check with typos
-        uses: crate-ci/typos@v1.43.3
+        uses: crate-ci/typos@v1.43.4
       - name: Install Ruff
         uses: astral-sh/ruff-action@v3.6.1
         with:
