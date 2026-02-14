@@ -2,6 +2,9 @@
   "search.exclude": {
     "**/uv.lock": true
   },
+  "json.schemaDownload.trustedDomains": {
+    "https://docs.renovatebot.com/renovate-schema.json": true
+  },
   "python.languageServer": "Pylance",
   "ty.disableLanguageServices": true,
   "[github-actions-workflow]": {
