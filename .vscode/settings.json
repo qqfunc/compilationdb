@@ -2,6 +2,7 @@
   "search.exclude": {
     "**/uv.lock": true
   },
+  "python.languageServer": "Pylance",
   "ty.disableLanguageServices": true,
   "[github-actions-workflow]": {
       "editor.defaultFormatter": "redhat.vscode-yaml"
