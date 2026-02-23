@@ -40,7 +40,7 @@ classifiers = [
 dynamic = ["version"]
 
 [project.scripts]
-gitrole = "compilationdb.__main__:main"
+compilationdb = "compilationdb.__main__:main"
 
 [project.urls]
 Source = "https://www.github.com/pythonlot/compilationdb"
