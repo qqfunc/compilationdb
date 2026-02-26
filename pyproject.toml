@@ -48,7 +48,7 @@ Issues = "https://www.github.com/pythonlot/compilationdb/issues"
 
 [dependency-groups]
 dev = [
-  "committed==1.1.10",
+  "committed==1.1.11",
   "editorconfig-checker==3.6.0",
   "lefthook==2.0.15",
   "ruff==0.15.2",
