@@ -52,7 +52,7 @@ jobs:
       - name: Install dependencies
         run: uv sync
       - name: Check with editorconfig-checker
-        uses: editorconfig-checker/action-editorconfig-checker@v2.1.0
+        uses: editorconfig-checker/action-editorconfig-checker@v2.2.0
       - name: Spell Check with typos
         uses: crate-ci/typos@v1.44.0
       - name: Install Ruff
