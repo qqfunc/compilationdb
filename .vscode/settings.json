@@ -5,7 +5,7 @@
   "json.schemaDownload.trustedDomains": {
     "https://docs.renovatebot.com/renovate-schema.json": true
   },
-  "python.languageServer": "Pylance",
+  "python.languageServer": "Default",
   "ty.disableLanguageServices": true,
   "[github-actions-workflow]": {
       "editor.defaultFormatter": "redhat.vscode-yaml"
